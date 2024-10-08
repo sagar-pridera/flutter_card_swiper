@@ -28,7 +28,8 @@ class _CardSwiperState<T extends Widget> extends State<CardSwiper>
 
     _undoableIndex.state = widget.initialIndex;
 
-    controllerSubscription = widget.controller?.events.listen(_controllerListener);
+    controllerSubscription =
+        widget.controller?.events.listen(_controllerListener);
 
     _animationController = AnimationController(
       duration: widget.duration,
